@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(ConfigurableJoint))]
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour {
@@ -11,7 +12,8 @@ public class PlayerController : MonoBehaviour {
 
     [SerializeField]
     private float thrusterForce = 1000f;
-
+    
+    
     [Header ("Spring Settings")]
     [SerializeField]
     private JointDriveMode jointMode = JointDriveMode.Position;
@@ -22,24 +24,30 @@ public class PlayerController : MonoBehaviour {
 
     private PlayerMotor motor;
     private ConfigurableJoint joint;
+    private Animator animator;
 
     private void Start () {
         motor = GetComponent<PlayerMotor> ();
         joint = GetComponent<ConfigurableJoint> ();
+        animator = GetComponent<Animator> ();
 
         SetJointSettings (this.jointSpring);
     }
 
     private void Update () {
         // Calculate movement velocity as a 3D vector
-        float xMov = Input.GetAxisRaw ("Horizontal");
-        float zMov = Input.GetAxisRaw ("Vertical");
+        float xMov = Input.GetAxis ("Horizontal");
+        float zMov = Input.GetAxis ("Vertical");
 
         Vector3 moveHorizontal = transform.right * xMov;
         Vector3 moveVertical = transform.forward * zMov;
 
         // final movement vector
-        Vector3 velocity = (moveHorizontal + moveVertical).normalized * speed;
+        Vector3 velocity = (moveHorizontal + moveVertical) * speed;
+
+        // Animate movement
+        animator.SetFloat ("ForwardVelocity", zMov);
+
         // apply movement
         motor.Move (velocity);
 

@@ -54,6 +54,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
 352455aaadb8c98ff36ead557753abfa Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TiltInput
+e4d9631682f212a20c7fa404067bd205 Assembly-CSharp.dll:.GameManager
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 5fc094978ce3e3591a7500ed380d854a UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -177,6 +178,7 @@ a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
 c08b673a2368599cf7263ce1d069ebdb Assembly-CSharp.dll:.PlayerMotor
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+572df311c0d2c4a9e6f7f245c07e7c18 Assembly-CSharp.dll:.Player
 49dcb3939f87870ac10cf1f8fcdfb35e Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FollowTarget
 219ec6059796d8951d2adcd8505d0dc2 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
 a8cd58c1680eb5251e5604e560cf89e9 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectDestructor
@@ -184,8 +186,6 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.FPSCounter
+8cc8998fc570a76e13419952e9119839 Assembly-CSharp.dll:.PlayerShoot
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 47cd05cf11ce8beb2fd9a1522f58f5ec Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-8cc8998fc570a76e13419952e9119839 Assembly-CSharp.dll:.PlayerShoot
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.GameManager
-6f0d88143c301abdc3147ebdcf740f7e Assembly-CSharp.dll:.Player
