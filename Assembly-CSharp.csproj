@@ -60,9 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\PlayerSetup.cs" />
+    <Compile Include="Assets\Scripts\PlayerShoot.cs" />
+    <Compile Include="Assets\Scripts\PlayerWeapon.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>F:/Projects/Unity Projects/Tussle/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
