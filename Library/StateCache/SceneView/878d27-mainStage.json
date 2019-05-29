@@ -1,13 +1,1 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":4.6965179443359379,"y":1.8894424438476563,"z":1.1160888671875},"rotation":{"x":-0.033837102353572848,"y":-0.056345634162425998,"z":0.0019131405279040337,"w":-0.9978359341621399},"size":11.907559394836426,"orthographic":true}
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.04587149620056152,"y":0.5444632172584534,"z":-4.966460704803467},"rotation":{"x":-0.05514909699559212,"y":0.7361303567886353,"z":-0.06042321026325226,"w":-0.6718778610229492},"size":5.259657382965088,"orthographic":false}
->>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.04587149620056152,"y":0.5444632172584534,"z":-4.966460704803467},"rotation":{"x":-0.05514909699559212,"y":0.7361303567886353,"z":-0.06042321026325226,"w":-0.6718778610229492},"size":5.259657382965088,"orthographic":false}
->>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
-=======
-﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.04587149620056152,"y":0.5444632172584534,"z":-4.966460704803467},"rotation":{"x":-0.05514909699559212,"y":0.7361303567886353,"z":-0.06042321026325226,"w":-0.6718778610229492},"size":5.259657382965088,"orthographic":false}
->>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.4231843948364258,"y":4.341943740844727,"z":-0.34911346435546877},"rotation":{"x":0.0013723591109737754,"y":0.9982175230979919,"z":-0.053956132382154468,"w":0.02546875737607479},"size":68.23661804199219,"orthographic":false}
