@@ -111,6 +111,9 @@ MonoBehaviour:
   m_MaxSize: {x: 12010, y: 4024}
   vertical: 0
   controlID: 41
+<<<<<<< HEAD
+>>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
+=======
 >>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
 --- !u!114 &5
 MonoBehaviour:
@@ -196,6 +199,9 @@ MonoBehaviour:
   m_MaxSize: {x: 16012, y: 14048}
   vertical: 0
   controlID: 39
+<<<<<<< HEAD
+>>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
+=======
 >>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
 --- !u!114 &8
 MonoBehaviour:
@@ -339,8 +345,11 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &13
 =======
+=======
+>>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
 --- !u!114 &12
 >>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
 MonoBehaviour:
@@ -792,15 +801,21 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 31.891308}
     m_SelectedIDs: f62a0000
     m_LastClickedID: 10998
     m_ExpandedIDs: 00000000ce26000026270000ac270000f2270000d6290000da2c0000dc2c0000de2c0000e02c0000e22c000000ca9a3b
 =======
+=======
+>>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
     scrollPos: {x: 0, y: 183}
     m_SelectedIDs: 62420000
     m_LastClickedID: 16994
     m_ExpandedIDs: 000000008826000012270000e42a0000e62a0000e82a0000de2e00006042000000ca9a3b
+<<<<<<< HEAD
+>>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
+=======
 >>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -830,7 +845,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ce26000026270000ac270000f2270000d6290000da2c0000dc2c0000de2c0000e02c0000e22c000000ca9a3b
+=======
+    m_ExpandedIDs: 0000000088260000b026000012270000e42a0000e62a0000e82a0000
+>>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
 =======
     m_ExpandedIDs: 0000000088260000b026000012270000e42a0000e62a0000e82a0000
 >>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
@@ -878,7 +897,11 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 10}
+>>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
 =======
       m_ClientGUIView: {fileID: 10}
 >>>>>>> parent of 2b6941f... Episode 10 (Crosshair)
