@@ -1,11 +1,13 @@
 ﻿using UnityEngine.Networking;
 using UnityEngine;
 
+[RequireComponent (typeof(WeaponManager))]
 public class PlayerShoot : NetworkBehaviour {
 
     private const string PLAYER_TAG = "Player";
-
-    public PlayerWeapon weapon;
+    
+    private PlayerWeapon currentWeapon;
+    private WeaponManager weaponManager;
 
     [SerializeField]
     private Camera cam;
@@ -19,22 +21,33 @@ public class PlayerShoot : NetworkBehaviour {
             Debug.LogError ("PlayerShoot: No camera referenced!");
             this.enabled = false;
         }
+        weaponManager = GetComponent<WeaponManager> ();
     }
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetButtonDown("Fire1")) {
-            Shoot ();
+        currentWeapon = weaponManager.getCurrentWeapon ();
+        if (currentWeapon.fireRate <= 0f) {
+            if ( Input.GetButtonDown ("Fire1") )
+                Shoot ();
+        }
+        else {
+            if ( Input.GetButtonDown ("Fire1") )
+                InvokeRepeating ("Shoot", 0f, 1f / currentWeapon.fireRate);
+            else if (Input.GetButtonUp("Fire1"))
+                CancelInvoke ("Shoot");
         }
     }
 
     [Client]
     private void Shoot () {
+        Debug.Log ("Shoot");
+
         RaycastHit hit;
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, weapon.range, mask)) {
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, currentWeapon.range, mask)) {
             // We hit something
             if (hit.collider.tag == PLAYER_TAG) {
-                CmdPlayerShot (hit.collider.name, weapon.damage);
+                CmdPlayerShot (hit.collider.name, currentWeapon.damage);
             }
         }
 
