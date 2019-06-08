@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
-  showGUI: 1
+  showGUI: 0
   offsetX: 0
   offsetY: 0
 --- !u!114 &7924933144542093618
@@ -143,3 +143,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc4289986abc024cbdd1744db21b6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  roomSize: 6
