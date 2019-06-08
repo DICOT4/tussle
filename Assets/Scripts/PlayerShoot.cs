@@ -39,45 +39,16 @@ public class PlayerShoot : NetworkBehaviour {
         }
     }
 
-    [Command]
-    void CmdOnShoot(){
-        RpcDoShootEffect();
-    }
-
-    [ClientRpc]
-    void RpcDoShootEffect() {
-        weaponManager.getWeaponGraphics().muzzleFlash.Play();
-
-    }
-
-    [Command]
-    void CmdOnHit(Vector3 _pos, Vector3 _normal)
-    {
-        RpcDoHitEffect(_pos, _normal);   
-    }
-
-    [ClientRpc]
-    void RpcDoHitEffect(Vector3 _pos, Vector3 _normal)
-    {
-
-       GameObject _hitEffect = (GameObject)Instantiate(weaponManager.getWeaponGraphics().hitEffectPrefab, _pos, Quaternion.LookRotation(_normal));
-        Destroy(_hitEffect, 0.8f);
-    }
-
     [Client]
     private void Shoot () {
-        if (!isLocalPlayer) {
-            return;
-        }
-        CmdOnShoot();
+        Debug.Log ("Shoot");
+
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, currentWeapon.range, mask)) {
             // We hit something
             if (hit.collider.tag == PLAYER_TAG) {
                 CmdPlayerShot (hit.collider.name, currentWeapon.damage);
             }
-
-            CmdOnHit(hit.point, hit.normal);
         }
 
     }

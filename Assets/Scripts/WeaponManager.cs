@@ -34,7 +34,7 @@ public class WeaponManager : NetworkBehaviour {
             Debug.Log ("No weapon graphics available on the weapon object: " + weaponIns.name);
 
         if (isLocalPlayer) {
-            Util.setLayerRecursively(weaponIns, LayerMask.NameToLayer(weaponLayerName));
+            weaponIns.layer = LayerMask.NameToLayer (weaponLayerName);
         }
     }
 

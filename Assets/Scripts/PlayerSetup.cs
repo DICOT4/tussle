@@ -2,7 +2,6 @@
 using UnityEngine.Networking;
 
 [RequireComponent(typeof(Player))]
-[RequireComponent(typeof(PlayerController))]
 public class PlayerSetup : NetworkBehaviour {
 
     [SerializeField]
@@ -16,11 +15,9 @@ public class PlayerSetup : NetworkBehaviour {
     private GameObject playerGraphics;
     [SerializeField]
     private GameObject playerUIPrefab;
+    private GameObject playerUIInstance;
 
-    [HideInInspector]
-    public GameObject playerUIInstance;
-
-   
+    Camera sceneCamera;
 
     private void Start () {
         // Disable components that should only be
@@ -29,24 +26,19 @@ public class PlayerSetup : NetworkBehaviour {
             DisableComponents ();
             AssignRemoteLayer ();
         } else {
-           
+            // We are local player: disable scene camera
+            sceneCamera = Camera.main;
+            if (sceneCamera != null)
+                sceneCamera.gameObject.SetActive (false);
             // Disable Player graphics for local player
             SetLayerRecursively (playerGraphics, LayerMask.NameToLayer(dontDrawLayerName));
 
             // Create PlayerUI
             playerUIInstance = Instantiate (playerUIPrefab);
             playerUIInstance.name = playerUIPrefab.name;
-
-            PlayerUI ui = playerUIInstance.GetComponent<PlayerUI>();
-
-            if (ui == null) {
-                Debug.LogError("No Player UI");
-            }
-            ui.setController(GetComponent<PlayerController>());
-            GetComponent<Player>().SetupPlayer();
         }
 
-        
+        GetComponent<Player> ().Setup ();
     }
 
     private void SetLayerRecursively (GameObject obj, int newlayer) {
@@ -79,8 +71,8 @@ public class PlayerSetup : NetworkBehaviour {
         Destroy (playerUIInstance);
 
         // Re-enable the scene camera
-        if(isLocalPlayer)
-                GameManager.instance.setSceneCameraActive(true);
+        if ( sceneCamera != null )
+            sceneCamera.gameObject.SetActive (true);
 
         GameManager.UnRegisterPlayer (transform.name);
     }
